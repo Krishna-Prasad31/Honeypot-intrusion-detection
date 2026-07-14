@@ -1,0 +1,18 @@
+filebeat.inputs:
+  - type: filestream
+    id: cowrie-json
+
+    enabled: true
+
+    paths:
+      - /logs/log/cowrie/cowrie.json
+
+    parsers:
+      - ndjson:
+          overwrite_keys: true
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+
+setup.kibana:
+  host: "http://kibana:5601"

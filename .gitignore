@@ -1,0 +1,26 @@
+# Runtime data
+
+cowrie-var/
+cowrie-etc/
+
+# Logs
+*.log
+
+# Elasticsearch data)
+elasticsearch-data/
+
+# Kibana data
+kibana-data/
+
+# Docker override files
+docker-compose.override.yml
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
